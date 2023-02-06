@@ -1,0 +1,32 @@
+Intel(R) Parallel Studio XE 2020 Update 4 for Linux*
+Copyright 2009-2020 Intel Corporation.
+Running on host compute242.bc4.acrc.priv
+Started on Mon Jan 30 16:04:00 GMT 2023
+Directory is /user/home/ig20411/KNNCLMPI
+Slurm job ID is 11126489
+Number of tasks:
+
+
+Brute Force non-load-balancing approach:
+Average number of neighbours: 24.3
+Minimum number of neighbours: 7
+Maximum number of neighbours: 44
+Time taken (s): 0.00318389
+Brute Force load-balancing approach:
+Average number of neighbours: 24.3
+Minimum number of neighbours: 7
+Maximum number of neighbours: 44
+Time taken (s): 5.404e-05
+Cell list load-balanced approach:
+Average number of neighbours: 24.3
+Minimum number of neighbours: 7
+Maximum number of neighbours: 44
+Time taken (s): 0.000860818
+Atom-centred cell list load-balanced approach:
+Average number of neighbours: 24.3
+Minimum number of neighbours: 7
+Maximum number of neighbours: 44
+Time taken (s): 0.000216617
+
+
+Ended on: Mon Jan 30 16:04:07 GMT 2023
