@@ -321,8 +321,8 @@ int main(int argc, char **argv)
     // Define cut-off distance
     double cutoff_distance = 8;
 
-    /* Brute Force non-load-balancing approach
-    ------------------------------------------*/
+    /* Brute force non-load-balanced approach
+    --------------------------------------------------------------------------------------------------------*/
     // Start timer
     struct timespec start, finish;
     clock_gettime(CLOCK_MONOTONIC, &start);
@@ -340,8 +340,8 @@ int main(int argc, char **argv)
     time_elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
     if (rank == 0) {std::cout << "Time taken (s): " << time_elapsed << std::endl;}
 
-    /* Brute Force load-balancing approach
-    ------------------------------------------*/
+    /* Brute force load-balanced approach
+    --------------------------------------------------------------------------------------------------------*/
     // Start timer
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -359,7 +359,7 @@ int main(int argc, char **argv)
     if (rank == 0) {std::cout << "Time taken (s): " << time_elapsed1 << std::endl;}
 
     /* Cell list load-balanced approach
-    ------------------------------------------*/
+    --------------------------------------------------------------------------------------------------------*/
     // Start timer
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -377,7 +377,7 @@ int main(int argc, char **argv)
     if (rank == 0) {std::cout << "Time taken (s): " << time_elapsed2 << std::endl;}
     
     /* Atom-centred cell list load-balanced approach
-    ------------------------------------------*/
+    --------------------------------------------------------------------------------------------------------*/
     // Start timer
     clock_gettime(CLOCK_MONOTONIC, &start);
 
